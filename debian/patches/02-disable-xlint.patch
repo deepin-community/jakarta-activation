@@ -1,0 +1,18 @@
+Description: Disables Xlint to work around parsing issue due to #851557
+Author: Emmanuel Bourg <ebourg@apache.org>
+Forwarded: not-needed
+--- a/activation/pom.xml
++++ b/activation/pom.xml
+@@ -72,12 +72,6 @@
+ 				ignore some of the errors that are
+ 				too hard to fix for now
+ 			    -->
+-			    <compilerArguments>
+-				<Xlint:all/>
+-				<Xlint:-rawtypes/>
+-				<Xlint:-unchecked/>
+-				<Xlint:-finally/>
+-			    </compilerArguments>
+ 			    <showWarnings>true</showWarnings>
+ 			</configuration>
+ 		    </execution>
